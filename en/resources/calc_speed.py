@@ -6,9 +6,9 @@ from datetime import datetime
 
 def get_time(image):
     with open(image, 'rb') as image_file:
-        frame1 = Image(image_file)
+        frame = Image(image_file)
         #print(frame1.datetime)
-        time = datetime.strptime(frame1.datetime, '%Y:%m:%d %H:%M:%S')
+        time = datetime.strptime(frame.datetime, '%Y:%m:%d %H:%M:%S')
     return time
     
     
