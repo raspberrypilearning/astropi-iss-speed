@@ -77,8 +77,8 @@ def display_matches(image_1_cv, key_points_1, image_2_cv, key_points_2, matches)
     cv2.destroyWindow('m')
 
 
-image_1 = 'cv2comp2/photo_07464.jpg'
-image_2 = 'cv2comp2/photo_07465.jpg'
+image_1 = 'photo_07464.jpg'
+image_2 = 'photo_07465.jpg'
 
 
 time_difference = get_time_difference(image_1, image_2)
