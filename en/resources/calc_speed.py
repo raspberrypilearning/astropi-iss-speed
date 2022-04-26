@@ -1,7 +1,7 @@
-import cv2
-import math
 from exif import Image
 from datetime import datetime
+import cv2
+import math
 
 
 def get_time(image):
