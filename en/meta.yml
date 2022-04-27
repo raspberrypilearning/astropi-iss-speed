@@ -7,5 +7,10 @@ copyedit: false
 last_tested: "2022-04-26"
 steps:
   - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Use EXIF data to find a time difference
+  - title: Find matching features
+  - title: Display matching features
+  - title: Find matching coordinates
+  - title: Calculate distance and speed
+  - title: Upgrade your project
+  - title: Enter the third mission
