@@ -8,6 +8,7 @@ last_tested: "2022-04-26"
 steps:
   - title: Introduction
   - title: Use EXIF data to find a time difference
+  - title: Finding the time difference for two photos
   - title: Find matching features
   - title: Display matching features
   - title: Find matching coordinates

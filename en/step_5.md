@@ -1,1 +1,1 @@
-## Find matching coordinates
+## Display matching features

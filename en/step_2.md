@@ -54,10 +54,11 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 4
+line_highlights: 5
 ---
 from exif import Image
 from datetime import datetime
+
 
 def get_time(image):
 --- /code ---
@@ -74,10 +75,11 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 5-6
+line_highlights: 6-7
 ---
 from exif import Image
 from datetime import datetime
+
 
 def get_time(image):
     with open(image, 'rb') as image_file:
@@ -96,10 +98,11 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 7-8
+line_highlights: 8-9
 ---
 from exif import Image
 from datetime import datetime
+
 
 def get_time(image):
     with open(image, 'rb') as image_file:
@@ -120,16 +123,18 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 10
+line_highlights: 12
 ---
 from exif import Image
 from datetime import datetime
+
 
 def get_time(image):
     with open(image, 'rb') as image_file:
         img = Image(image_file)
         for data in img.list_all():
             print(data)
+
 
 get_time('photo_00154.jpg')
 --- /code ---
@@ -192,10 +197,11 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 7-9, 11
+line_highlights: 8-10, 12
 ---
 from exif import Image
 from datetime import datetime
+
 
 def get_time(image):
     with open(image, 'rb') as image_file:
@@ -203,6 +209,7 @@ def get_time(image):
         time_str = img.get("datetime_original")
         time = datetime.strptime(time_str, '%Y:%m:%d %H:%M:%S')
     return time
+
 
 print(get_time('photo_00154.jpg'))
 --- /code ---
