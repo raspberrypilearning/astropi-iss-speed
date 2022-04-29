@@ -47,34 +47,34 @@ def display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches):
     cv2.destroyWindow('matches')
     
     
-def find_matching_coordinates(keypoints_1, keypoints2):
-    list_keypoints_1 = []
-    list_keypoints_2 = []
+def find_matching_coordinates(keypoints_1, keypoints2, matches):
+    coordinates_1 = []
+    coordinates_2 = []
     for match in matches:
         image_1_idx = match.queryIdx
         image_2_idx = match.trainIdx
         (x1,y1) = keypoints_1[image_1_idx].pt
         (x2,y2) = keypoints_2[image_2_idx].pt
-        list_keypoints_1.append((x1,y1))
-        list_keypoints_2.append((x2,y2))
-    return list_keypoints_1, list_keypoints_2
+        coordinates_1.append((x1,y1))
+        coordinates_2.append((x2,y2))
+    return coordinates_1, coordinates_2
 
 
-def calculate_mean_distance(list_kp1, list_kp2):
-    average_distance = 0
-    number_matches = len(matches)
+def calculate_mean_distance(coordinates_1, coordinates_2):
+    all_distances = 0
+    merged_coordinates = list(zip(coordinates_1, coordinates_2))
+    for coordinate in merged_coordinates:
+        x_difference = coordinate[0][0] - coordinate[1][0]
+        y_difference = coordinate[0][1] - coordinate[1][1]
+        distance = math.hypot(x_difference, y_difference)
+        all_distances = all_distances + distance
+    return all_distances / len(merged_coordinates)
 
-    for c in range(number_matches):
-        distance = math.hypot(list_kp1[c][0] - list_kp2[c][0], list_kp1[c][1] - list_kp2[c][1])
-        average_distance = average_distance + distance
-    return average_distance / number_matches
-    
 
 def calculate_speed_in_kmps(feature_distance, scaling, time_difference):
-    metre_distance = feature_distance * (scaling / 100)
-    speed = metre_distance / time_difference
-    kmps = speed / 1000
-    return kmps
+    distance = feature_distance * (scaling / 100000)
+    speed = distance / time_difference
+    return speed
 
 
 image_1 = 'photo_07464.jpg'
@@ -85,9 +85,8 @@ time_difference = get_time_difference(image_1, image_2) #get time difference bet
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
 keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) #get keypoints and descriptors
 matches = calculate_matches(descriptors_1, descriptors_2) #match descriptors
-print(matches)
 display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) #display matches
-list_keypoints_1, list_keypoints_2 = find_matching_coordinates(keypoints_1, keypoints_2)
-average_feature_distance = calculate_mean_distance(list_keypoints_1, list_keypoints_2)
+coordinates_1, coordinates_2 = find_matching_coordinates(keypoints_1, keypoints_2, matches)
+average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
 speed = calculate_speed_in_kmps(average_feature_distance, 12648, time_difference)
 print(speed)

@@ -12,6 +12,7 @@ steps:
   - title: Find matching features
   - title: Display matching features
   - title: Find matching coordinates
-  - title: Calculate distance and speed
+  - title: Calculate feature distance
+  - title: Calculate average speed
   - title: Upgrade your project
-  - title: Enter the third mission
+  - title: What next?
