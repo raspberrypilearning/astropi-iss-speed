@@ -75,9 +75,9 @@ Call your function and then print the result at the end of your program.
 ---
 language: python
 filename: calc_speed.py
-line_numbers: true
-line_number_start: 84
-line_highlights: 91-92
+line_numbers: false
+line_number_start:
+line_highlights: 7-8
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects

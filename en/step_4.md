@@ -130,16 +130,20 @@ Now that you have your matches, you can run all your functions and have a look a
 
 --- task ---
 
-Add function calls to the end of your script to run your functions and print out the matches.
+Assign the two images you want to use, and add function calls to the end of your script to run your functions and print out the matches.
 
 --- code ---
 ---
 language: python
 filename: calc_speed.py
-line_numbers: true
-line_number_start: 42
-line_highlights: 42-46
+line_numbers: false
+line_number_start:
+line_highlights: 
 ---
+image_1 = 'photo_07464.jpg'
+image_2 = 'photo_07465.jpg'
+
+
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
 keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) #get keypoints and descriptors

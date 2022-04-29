@@ -99,9 +99,9 @@ Add a function call to the bottom of you script to store the outputs of the func
 ---
 language: python
 filename: calc_speed.py
-line_numbers: true
-line_number_start: 63
-line_highlights: 68
+line_numbers: false
+line_number_start: 
+line_highlights: 6
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
