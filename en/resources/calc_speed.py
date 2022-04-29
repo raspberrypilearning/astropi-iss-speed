@@ -85,6 +85,7 @@ time_difference = get_time_difference(image_1, image_2) #get time difference bet
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
 keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) #get keypoints and descriptors
 matches = calculate_matches(descriptors_1, descriptors_2) #match descriptors
+print(matches)
 display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) #display matches
 list_keypoints_1, list_keypoints_2 = find_matching_coordinates(keypoints_1, keypoints_2)
 average_feature_distance = calculate_mean_distance(list_keypoints_1, list_keypoints_2)
