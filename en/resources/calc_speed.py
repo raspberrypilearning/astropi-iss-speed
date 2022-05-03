@@ -71,8 +71,8 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
     return all_distances / len(merged_coordinates)
 
 
-def calculate_speed_in_kmps(feature_distance, scaling, time_difference):
-    distance = feature_distance * (scaling / 100000)
+def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
+    distance = feature_distance * GSD / 100000
     speed = distance / time_difference
     return speed
 
