@@ -40,7 +40,7 @@ Save your file as `iss_speed.py`.
 
 --- task ---
 
-You will need some images taken from the Astro Pi unit on ISS. You can download a zip file of the photos by clicking on [this link](https://rpf.io/en/p/astropi-iss-speed){:target='_blank'}. Once the photos have been downloaded, you can right click on the folder in your **Downloads** and unzip the folder. **Then move the photos to the same place that you have saved your python script**
+You will need some images taken from the Astro Pi unit on ISS. You can download a zip file of the photos by clicking on [this link](https://rpf.io/p/en/astropi-iss-speed){:target='_blank'}. Once the photos have been downloaded, you can right click on the folder in your **Downloads** and unzip the folder. **Then move the photos to the same place that you have saved your python script**
 
 --- /task ---
 
