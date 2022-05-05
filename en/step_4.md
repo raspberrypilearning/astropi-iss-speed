@@ -43,7 +43,7 @@ Import the `cv2` package and the inbuilt `math` package at the top of your scrip
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 
+line_number_start: 1
 line_highlights: 3-4
 ---
 from exif import Image
@@ -144,7 +144,7 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start:42
-line_highlights: 
+line_highlights:
 ---
 image_1 = 'photo_07464.jpg'
 image_2 = 'photo_07465.jpg'
