@@ -14,7 +14,7 @@ line_numbers: true
 line_number_start: 54
 line_highlights: 54
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
 --- /code ---
 
 --- /task ---
@@ -31,7 +31,7 @@ line_numbers: true
 line_number_start: 54
 line_highlights: 55-56
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
     coordinates_2 = []
 --- /code ---
@@ -52,10 +52,10 @@ line_numbers: true
 line_number_start: 54
 line_highlights: 57-58
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
     coordinates_2 = []
-    for match in matches
+    for match in matches:
         image_1_idx = match.queryIdx
         image_2_idx = match.trainIdx
         (x1,y1) = keypoints_1[image_1_idx].pt
@@ -76,10 +76,10 @@ line_numbers: true
 line_number_start: 54
 line_highlights: 62-64
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
     coordinates_2 = []
-    for match in matches
+    for match in matches:
         image_1_idx = match.queryIdx
         image_2_idx = match.trainIdx
         (x1,y1) = keypoints_1[image_1_idx].pt
