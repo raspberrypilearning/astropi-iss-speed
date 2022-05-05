@@ -176,7 +176,7 @@ Add a function call at the bottom of your code to calculate the average distance
 language: python
 filename: iss_speed.py
 line_numbers: false
-line_number_start:75
+line_number_start: 75
 line_highlights: 81-82
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
