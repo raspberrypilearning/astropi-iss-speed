@@ -17,8 +17,8 @@ Create a new function to calculate the speed of the ISS. It should take the `fea
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 74
-line_highlights: 74
+line_number_start: 78
+line_highlights: 78
 ---
 def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 --- /code ---
@@ -36,8 +36,8 @@ Calculate the distance by multiplying the feature distance in pixels by the `GSD
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 74
-line_highlights: 75
+line_number_start: 78
+line_highlights: 79
 ---
 def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
     distance = feature_distance * GSD / 100000
@@ -54,8 +54,8 @@ The speed can then be calculated by dividing by the `time_difference` between th
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 74
-line_highlights: 76-77
+line_number_start: 78
+line_highlights: 80-81
 ---
 def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
     distance = feature_distance * GSD / 100000
@@ -75,9 +75,9 @@ Call your function and then print the result at the end of your program.
 ---
 language: python
 filename: iss_speed.py
-line_numbers: false
-line_number_start:
-line_highlights: 7-8
+line_numbers: true
+line_number_start: 84
+line_highlights: 91-92
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects

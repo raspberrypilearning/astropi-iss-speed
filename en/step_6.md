@@ -4,7 +4,7 @@ Now that the features that are the same on each image have been matched, the coo
 
 --- task ---
 
-Create a new function that takes the two sets of keypoints as arguments.
+Create a new function that takes the two sets of keypoints and the list of matches as arguments.
 
 --- code ---
 ---
