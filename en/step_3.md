@@ -111,6 +111,7 @@ def get_time_difference(image_1, image_2):
     time_difference = time_2 - time_1
     print(time_difference)
 
+
 get_time_difference('photo_07464.jpg', 'photo_07465.jpg')
 
 --- /code ---
