@@ -11,8 +11,8 @@ Create a new function that takes the two sets of keypoints as arguments.
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 50
+line_number_start: 54
+line_highlights: 54
 ---
 def find_matching_coordinates(keypoints_1, keypoints2):
 --- /code ---
@@ -28,8 +28,8 @@ Create two empty lists, to store the coordinates of each matching feature, in ea
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 51-52
+line_number_start: 54
+line_highlights: 55-56
 ---
 def find_matching_coordinates(keypoints_1, keypoints2):
     coordinates_1 = []
@@ -49,8 +49,8 @@ Add a `for` loop to fetch the coordinates (`x1`, `y1`, `x2`, `y2`) of each match
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 53-57
+line_number_start: 54
+line_highlights: 57-58
 ---
 def find_matching_coordinates(keypoints_1, keypoints2):
     coordinates_1 = []
@@ -73,8 +73,8 @@ Then those coordinates can be added to the two coordinates lists, and the two li
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 58-60
+line_number_start: 54
+line_highlights: 62-64
 ---
 def find_matching_coordinates(keypoints_1, keypoints2):
     coordinates_1 = []
@@ -100,8 +100,8 @@ Add a function call to the bottom of you script to store the outputs of the func
 language: python
 filename: iss_speed.py
 line_numbers: false
-line_number_start: 
-line_highlights: 6
+line_number_start: 67
+line_highlights: 72
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
