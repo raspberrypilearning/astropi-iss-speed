@@ -15,7 +15,7 @@ Create a new function to calculate the speed of the ISS. It should take the `fea
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 74
 line_highlights: 74
@@ -34,7 +34,7 @@ Calculate the distance by multiplying the feature distance in pixels by the `GSD
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 74
 line_highlights: 75
@@ -52,7 +52,7 @@ The speed can then be calculated by dividing by the `time_difference` between th
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 74
 line_highlights: 76-77
@@ -74,7 +74,7 @@ Call your function and then print the result at the end of your program.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: false
 line_number_start:
 line_highlights: 7-8

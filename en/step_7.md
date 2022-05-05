@@ -9,7 +9,7 @@ Create a function to calculate the average distance between matching coordinates
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 63
@@ -28,7 +28,7 @@ Start by creating a variable to store the total of all the distances between coo
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 64-65
@@ -49,7 +49,7 @@ Add three `print` calls to see an item in `coordinates_1`, `coordinates_2` and `
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 66-68
@@ -97,7 +97,7 @@ Delete the `print` calls and add a `for` loop to iterate over the `merged_coordi
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 66-68
@@ -125,7 +125,7 @@ Calculate the distance between the two points and add them to the `all_distances
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 69-70
@@ -149,7 +149,7 @@ Return the average distance between the features, by dividing `all_distances` by
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 71
@@ -174,7 +174,7 @@ Add a function call at the bottom of your code to calculate the average distance
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: false
 line_number_start:
 line_highlights: 7-8

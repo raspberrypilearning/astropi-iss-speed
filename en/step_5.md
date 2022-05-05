@@ -9,7 +9,7 @@ Delete the final `print` call at the end of your script.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 42
 line_highlights: 46
@@ -117,7 +117,7 @@ At the bottom of you script add the following lines:
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: false
 line_number_start: 
 line_highlights: 5

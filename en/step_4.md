@@ -9,7 +9,7 @@ Delete the `print` statement from your code.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 20
@@ -41,7 +41,7 @@ Import the `cv2` package and the inbuilt `math` package at the top of your scrip
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 
 line_highlights: 3-4
@@ -61,7 +61,7 @@ To process images they need to be converted to OpenCV objects, so add a function
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 22
 line_highlights: 22-25
@@ -83,7 +83,7 @@ Write a function to find the keypoints and descriptors for the two images. It wi
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 28
 line_highlights: 28-33
@@ -112,7 +112,7 @@ Write a function that takes the two sets of descriptors and tries to find matche
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 35
 line_highlights: 35-39
@@ -135,7 +135,7 @@ Assign the two images you want to use, and add function calls to the end of your
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: false
 line_number_start:
 line_highlights: 
