@@ -50,6 +50,7 @@ from exif import Image
 from datetime import datetime
 import cv2
 import math
+
 --- /code ---
 
 --- /task ---
@@ -76,6 +77,7 @@ def convert_to_cv(image_1, image_2):
     image_1_cv = cv2.imread(image_1, 0)
     image_2_cv = cv2.imread(image_2, 0)
     return image_1_cv, image_2_cv
+
 --- /code ---
 
 --- /task ---
@@ -99,6 +101,7 @@ def calculate_features(image_1, image_2, feature_number):
     keypoints_1, descriptors_1 = orb.detectAndCompute(image_1_cv, None)
     keypoints_2, descriptors_2 = orb.detectAndCompute(image_2_cv, None)
     return keypoints_1, keypoints_2, descriptors_1, descriptors_2
+
 --- /code ---
 
 --- /task ---
@@ -128,6 +131,7 @@ def calculate_matches(descriptors_1, descriptors_2):
     matches = brute_force.match(descriptors_1, descriptors_2)
     matches = sorted(matches, key=lambda x: x.distance)
     return matches
+
 --- /code ---
 
 --- /task ---
@@ -155,6 +159,7 @@ image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images 
 keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) #get keypoints and descriptors
 matches = calculate_matches(descriptors_1, descriptors_2) #match descriptors
 print(matches)
+
 --- /code ---
 
 --- /task ---
