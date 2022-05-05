@@ -14,7 +14,7 @@ You will:
 
 --- task ---
   
-The image below shows two photos taken from the ISS, with lines that connect similar features. By measuring the length of these lines and the time taken between photos, you can calculate the speed that the camera was moving, and so work out how fast the ISS is travelling.
+The image below shows two photos taken from the ISS, with lines that connect similar features. By measuring the pixel distance between the features that have moved, you can calculate the speed that the camera was moving, and so work out how fast the ISS is travelling.
 
 ![two images, side by side, taken from the ISS with lines mapping the similar features between the images](images/features_view.png)
 
