@@ -147,7 +147,7 @@ Assign the two images you want to use, and add function calls to the end of your
 language: python
 filename: iss_speed.py
 line_numbers: true
-line_number_start:42
+line_number_start: 42
 line_highlights:
 ---
 image_1 = 'photo_07464.jpg'
