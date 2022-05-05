@@ -72,6 +72,8 @@ def get_time_difference(image_1, image_2):
 
 --- /task ---
 
+--- task ---
+
 Subtract the two times from each other, and test it by printing.
 
 --- code ---
