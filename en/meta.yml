@@ -1,18 +1,19 @@
+---
 title: Calculate the speed of the ISS
 hero_image: images/banner.png
 description: astropi-iss-speed description
 version: 4
 listed: false
 copyedit: false
-last_tested: "2022-04-26"
+last_tested: '2022-04-26'
 steps:
-  - title: Introduction
-  - title: Use EXIF data to find a time difference
-  - title: Finding the time difference for two photos
-  - title: Find matching features
-  - title: Display matching features
-  - title: Find matching coordinates
-  - title: Calculate feature distance
-  - title: Calculate average speed
-  - title: Upgrade your project
-  - title: What next?
+- title: Introduction
+- title: Use EXIF data to find a time difference
+- title: Finding the time difference for two photos
+- title: Find matching features
+- title: Display matching features
+- title: Find matching coordinates
+- title: Calculate feature distance
+- title: Calculate average speed
+- title: Upgrade your project
+- title: What next?
