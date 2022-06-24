@@ -9,10 +9,10 @@ Create a function to calculate the average distance between matching coordinates
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 63
-line_highlights: 63
+line_number_start: 67
+line_highlights: 67
 ---
 def calculate_mean_distance(coordinates_1, coordinates_2):
 --- /code ---
@@ -28,10 +28,10 @@ Start by creating a variable to store the total of all the distances between coo
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 63
-line_highlights: 64-65
+line_number_start: 67
+line_highlights: 68-69
 ---
 def calculate_mean_distance(coordinates_1, coordinates_2):
     all_distances = 0
@@ -49,10 +49,10 @@ Add three `print` calls to see an item in `coordinates_1`, `coordinates_2` and `
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 63
-line_highlights: 66-68
+line_number_start: 67
+line_highlights: 70-72
 ---
 def calculate_mean_distance(coordinates_1, coordinates_2):
     all_distances = 0
@@ -73,7 +73,7 @@ Add a call to your function at the bottom of your script.
 language: python
 filename: 
 line_numbers: true
-line_number_start: 
+line_number_start: 81
 line_highlights: 
 ---
 average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
@@ -97,10 +97,10 @@ Delete the `print` calls and add a `for` loop to iterate over the `merged_coordi
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 63
-line_highlights: 66-68
+line_number_start: 67
+line_highlights: 70-72
 ---
 def calculate_mean_distance(coordinates_1, coordinates_2):
     all_distances = 0
@@ -125,10 +125,10 @@ Calculate the distance between the two points and add them to the `all_distances
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 63
-line_highlights: 69-70
+line_number_start: 67
+line_highlights: 73-74
 ---
 def calculate_mean_distance(coordinates_1, coordinates_2):
     all_distances = 0
@@ -137,7 +137,7 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
         x_difference = coordinate[0][0] - coordinate[1][0]
         y_difference = coordinate[0][1] - coordinate[1][1]
         distance = math.hypot(x_difference, y_difference)
-        all_distances = all_distance + distances
+        all_distances = all_distances + distance
 --- /code ---
 
 --- /task ---
@@ -149,10 +149,10 @@ Return the average distance between the features, by dividing `all_distances` by
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 63
-line_highlights: 71
+line_number_start: 67
+line_highlights: 75
 ---
 def calculate_mean_distance(coordinates_1, coordinates_2):
     all_distances = 0
@@ -161,7 +161,7 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
         x_difference = coordinate[0][0] - coordinate[1][0]
         y_difference = coordinate[0][1] - coordinate[1][1]
         distance = math.hypot(x_difference, y_difference)
-        all_distances = all_distance + distances
+        all_distances = all_distances + distance
     return all_distances / len(merged_coordinates)
 --- /code ---
 
@@ -174,10 +174,10 @@ Add a function call at the bottom of your code to calculate the average distance
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: false
-line_number_start:
-line_highlights: 7-8
+line_number_start: 75
+line_highlights: 81-82
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects

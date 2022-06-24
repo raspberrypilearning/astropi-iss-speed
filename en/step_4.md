@@ -9,7 +9,7 @@ Delete the `print` statement from your code.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 20
@@ -41,16 +41,23 @@ Import the `cv2` package and the inbuilt `math` package at the top of your scrip
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 
+line_number_start: 1
 line_highlights: 3-4
 ---
 from exif import Image
 from datetime import datetime
 import cv2
 import math
+
 --- /code ---
+
+--- /task ---
+
+--- task ---
+
+Delete your call to `print(get_time_difference('photo_07464.jpg', 'photo_07465.jpg')` on line 22.
 
 --- /task ---
 
@@ -61,7 +68,7 @@ To process images they need to be converted to OpenCV objects, so add a function
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 22
 line_highlights: 22-25
@@ -70,6 +77,7 @@ def convert_to_cv(image_1, image_2):
     image_1_cv = cv2.imread(image_1, 0)
     image_2_cv = cv2.imread(image_2, 0)
     return image_1_cv, image_2_cv
+
 --- /code ---
 
 --- /task ---
@@ -83,7 +91,7 @@ Write a function to find the keypoints and descriptors for the two images. It wi
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 28
 line_highlights: 28-33
@@ -92,7 +100,8 @@ def calculate_features(image_1, image_2, feature_number):
     orb = cv2.ORB_create(nfeatures = feature_number)
     keypoints_1, descriptors_1 = orb.detectAndCompute(image_1_cv, None)
     keypoints_2, descriptors_2 = orb.detectAndCompute(image_2_cv, None)
-    return keypoints_1, key_points2, descriptors_1, descriptors_2
+    return keypoints_1, keypoints_2, descriptors_1, descriptors_2
+
 --- /code ---
 
 --- /task ---
@@ -100,10 +109,10 @@ def calculate_features(image_1, image_2, feature_number):
 Now you have the keypoints and descriptors of the keypoints, they need to be matched between the two images. This will tell you whether a keypoint in the first image is the same keypoint in the second image. The simplest way to do this is to use brute force.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**Brute force**</span> algorithms mean the computer is trying every possible combination. It's like trying to unlock a pin protected phone by starting with the pin `0000`, then moving on to `0001` and keep going until it unlocks or you get to `9999`.
+A <span style="color: #0faeb0">**Brute force**</span> algorithm means the computer is trying every possible combination. It's like trying to unlock a pin protected phone by starting with the pin `0000`, then moving on to `0001` and keep going until it unlocks or you get to `9999`.
 </p>
 
-Brute force, in this context, means that you take a descriptor from the first image and try to match it against **all** the descriptors in the second image. A match will either be found or not. Then you take the second descriptor from the first image and repeat the process, and then repeat it again until you have compared every descriptor in the first image and compared it to the ones second.
+**Brute force**, in this context, means that you take a descriptor from the first image and try to match it against **all** the descriptors in the second image. A match will either be found or not. Then you take the second descriptor from the first image and repeat the process, and then repeat it again until you have compared every descriptor in the first image and compared it to the ones second.
 
 --- task ---
 
@@ -112,7 +121,7 @@ Write a function that takes the two sets of descriptors and tries to find matche
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 35
 line_highlights: 35-39
@@ -122,6 +131,7 @@ def calculate_matches(descriptors_1, descriptors_2):
     matches = brute_force.match(descriptors_1, descriptors_2)
     matches = sorted(matches, key=lambda x: x.distance)
     return matches
+
 --- /code ---
 
 --- /task ---
@@ -135,10 +145,10 @@ Assign the two images you want to use, and add function calls to the end of your
 --- code ---
 ---
 language: python
-filename: calc_speed.py
-line_numbers: false
-line_number_start:
-line_highlights: 
+filename: iss_speed.py
+line_numbers: true
+line_number_start: 42
+line_highlights:
 ---
 image_1 = 'photo_07464.jpg'
 image_2 = 'photo_07465.jpg'
@@ -149,6 +159,7 @@ image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images 
 keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) #get keypoints and descriptors
 matches = calculate_matches(descriptors_1, descriptors_2) #match descriptors
 print(matches)
+
 --- /code ---
 
 --- /task ---

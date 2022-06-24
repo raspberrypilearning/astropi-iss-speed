@@ -4,17 +4,17 @@ Now that the features that are the same on each image have been matched, the coo
 
 --- task ---
 
-Create a new function that takes the two sets of keypoints as arguments.
+Create a new function that takes the two sets of keypoints and the list of matches as arguments.
 
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 50
+line_number_start: 54
+line_highlights: 54
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
 --- /code ---
 
 --- /task ---
@@ -26,12 +26,12 @@ Create two empty lists, to store the coordinates of each matching feature, in ea
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 51-52
+line_number_start: 54
+line_highlights: 55-56
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
     coordinates_2 = []
 --- /code ---
@@ -47,15 +47,15 @@ Add a `for` loop to fetch the coordinates (`x1`, `y1`, `x2`, `y2`) of each match
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 53-57
+line_number_start: 54
+line_highlights: 57-58
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
     coordinates_2 = []
-    for match in matches
+    for match in matches:
         image_1_idx = match.queryIdx
         image_2_idx = match.trainIdx
         (x1,y1) = keypoints_1[image_1_idx].pt
@@ -71,15 +71,15 @@ Then those coordinates can be added to the two coordinates lists, and the two li
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
-line_number_start: 50
-line_highlights: 58-60
+line_number_start: 54
+line_highlights: 62-64
 ---
-def find_matching_coordinates(keypoints_1, keypoints2):
+def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
     coordinates_2 = []
-    for match in matches
+    for match in matches:
         image_1_idx = match.queryIdx
         image_2_idx = match.trainIdx
         (x1,y1) = keypoints_1[image_1_idx].pt
@@ -98,10 +98,10 @@ Add a function call to the bottom of you script to store the outputs of the func
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: false
-line_number_start: 
-line_highlights: 6
+line_number_start: 67
+line_highlights: 72
 ---
 time_difference = get_time_difference(image_1, image_2) #get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
