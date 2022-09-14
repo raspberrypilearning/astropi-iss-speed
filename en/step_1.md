@@ -1,9 +1,9 @@
 ## Introduction
 
-In this project, you will use photos taken by an Astro Pi Flight Unit on the ISS to estimate the speed at which the ISS orbits the Earth.
+In this project, you will use photos taken by an Astro Pi Flight Unit on the International Space Station (ISS) to estimate the speed at which the ISS orbits the Earth.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**The European Astro Pi Challenge**</span> offers young people the amazing opportunity to conduct scientific investigations in space by writing computer programs that run on Raspberry Pi computers aboard the International Space Station (ISS).    
+<span style="color: #0faeb0">**The European Astro Pi Challenge**</span> offers young people the amazing opportunity to conduct scientific investigations in space by writing computer programs that run on Raspberry Pi computers aboard the ISS.    
 </p>
 
 You will:
