@@ -19,11 +19,11 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
 
 --- /task ---
 
-The Python `zip` function will take items from two lists and join them together. So the 0th item from the first list and the 0th item from the second list are combined together. Then the 1st items from each of the lists are combined together. The zipped lists can easily be converted back to a single simple list.
+The Python `zip` function will take items from two lists and join them together. So the 0th item from the first list and the 0th item from the second list are combined together. Then the 1st items from each of the lists are combined together. The zipped list object can easily be converted back to a single simple list.
 
 --- task ---
 
-Start by creating a variable to store the total of all the distances between coordinates and call it `all_distances`. Next, you can `zip` the two lists, and then convert the zipped object back to a list.
+Start by creating a variable to store the sum of all the distances between coordinates and call it `all_distances`. Next, you can `zip` the two lists, and then convert the zipped object back to a list.
 
 --- code ---
 ---
