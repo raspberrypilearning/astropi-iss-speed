@@ -93,7 +93,7 @@ def find_matching_coordinates(keypoints_1, keypoints_2, matches):
 
 --- task ---
 
-Add a function call to the bottom of you script to store the outputs of the function.
+Add a function call to the bottom of your script to store the outputs of the function.
 
 --- code ---
 ---
