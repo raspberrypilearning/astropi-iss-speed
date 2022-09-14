@@ -1,4 +1,4 @@
-## Use EXIF data to find a time difference
+## Use Exif data to find a time difference
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 An <span style="color: #0faeb0">**exchangeable image file format (Exif)**</span> is a standard that sets formats for image and sound files, and various tags that can be stored within the file. These tags can include the time the photo was taken, the location it was taken at, and the type of camera that was used.
