@@ -38,7 +38,7 @@ def get_time(image):
 
 --- task ---
 
-Create a new function called `get_time_dfference`. It will take two arguments, which will be the file names of the two images.
+Create a new function called `get_time_difference`. It will take two arguments, which will be the file names of the two images.
 
 --- code ---
 ---
@@ -130,7 +130,7 @@ Run your code, and if you have used the two images shown above, you should see o
 
 --- task ---
 
-The function needs to return the time in seconds, as an integer. The `datetime` package allows an easy conversion for this.
+The function needs to return the time in seconds, as an integer. The `datetime` package provides an easy conversion for this.
 
 --- code ---
 ---
