@@ -1,14 +1,14 @@
-## Use EXIF data to find a time difference
+## Use Exif data to find a time difference
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">**Exchangeable image file format (Exif),**</span> is a standard that sets formats for image and sound files, and various tags that can be stored within the file. These tags can include the time the photo was taken, the location it was taken at, and the type of camera that was used.
+An <span style="color: #0faeb0">**exchangeable image file format (Exif)**</span> is a standard that sets formats for image and sound files, and various tags that can be stored within the file. These tags can include the time the photo was taken, the location it was taken at, and the type of camera that was used.
 </p>
 
 To collect Exif data from a photograph, you need a Python library called `exif`.
 
 --- task ---
 
-Open the Thonny Python IDE, and click on **Tools** > **Manage packages**, then search for and install the `exif` library 
+Open the Thonny Python IDE, and click on **Tools** > **Manage packages**, then search for and install the `exif` library. 
 
 --- /task ---
 
@@ -16,7 +16,7 @@ Open the Thonny Python IDE, and click on **Tools** > **Manage packages**, then s
 
 --- task ---
 
-In the main code editor add the following two lines of code.
+In the main code editor, add the following two lines of code.
 
 --- code ---
 ---
@@ -40,13 +40,13 @@ Save your file as `iss_speed.py`.
 
 --- task ---
 
-You will need some images taken from the Astro Pi unit on ISS. You can download a zip file of the photos by clicking on [this link](https://rpf.io/p/en/astropi-iss-speed-go){:target='_blank'}. Once the photos have been downloaded, you can right click on the folder in your **Downloads** and unzip the folder. **Then move the photos to the same place that you have saved your python script**
+You will need some images taken from the Astro Pi unit on the ISS. You can download a zip file of the photos by clicking on [this link](https://rpf.io/p/en/astropi-iss-speed-go){:target='_blank'}. Once the photos have been downloaded, you can right-click on the folder in your **Downloads** and unzip the folder. **Then move the photos to the same place that you have saved your python script.**
 
 --- /task ---
 
 --- task ---
 
-Beneath your `import` lines, create a function to find the time that a photo was taken. It will take one argument, which will be the photo's file name
+Beneath your `import` lines, create a function to find the time that a photo was taken. It will take one argument, which will be the photo's file name.
 
 --- code ---
 ---
@@ -189,7 +189,7 @@ gps_longitude
 
 --- task ---
 
-The data that is needed for this project is `datetime_original`. This can be saved as a string, and then it needs converting to a `datetime` object so that calculations can be performed on it.
+The data that is needed for this project is `datetime_original`. This can be saved as a string, and then it needs to be converted to a `datetime` object so that calculations can be performed on it.
 
 --- code ---
 ---

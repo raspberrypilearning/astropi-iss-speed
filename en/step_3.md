@@ -1,10 +1,10 @@
 ## Finding the time difference for two photos
 
-You can calculate the speed an object is traveling at, by dividing the distance it moves, by the time it takes to move.
+You can calculate the speed an object is traveling at by dividing the distance it moves by the time it takes to move.
 
-![Speed, Distance, Time triangle](images/sdt.png)
+![Speed, distance, time triangle.](images/sdt.png)
 
-So to calculate the speed of the ISS from photos, you need to know how much time has passed between when the photos were taken.
+So, to calculate the speed of the ISS from photos, you need to know how much time has passed between when the photos were taken.
 
 --- task ---
 
@@ -38,7 +38,7 @@ def get_time(image):
 
 --- task ---
 
-Create a new function called `get_time_dfference`. It will take two arguments, which will be the file names of the two images.
+Create a new function called `get_time_difference`. It will take two arguments, which will be the file names of the two images.
 
 --- code ---
 ---
@@ -55,7 +55,7 @@ def get_time_difference(image_1, image_2):
 
 --- task ---
 
-Use your `get_time` function to get the times from the Exif data from each of the two images
+Use your `get_time` function to get the times from the Exif data from each of the two images.
 
 --- code ---
 ---
@@ -95,7 +95,7 @@ def get_time_difference(image_1, image_2):
 
 --- task ---
 
-You can run your function, by calling it with two different image names.
+You can run your function by calling it with two different image names.
 
 --- code ---
 ---
@@ -130,7 +130,7 @@ Run your code, and if you have used the two images shown above, you should see o
 
 --- task ---
 
-The function needs to return the time in seconds, as an integer. The `datetime` package allows an easy conversion for this.
+The function needs to return the time in seconds, as an integer. The `datetime` package provides an easy conversion for this.
 
 --- code ---
 ---
@@ -169,7 +169,7 @@ def get_time_difference(image_1, image_2):
     return time_difference.seconds
 
 
-print(get_time_difference('photo_07464.jpg', 'photo_07465.jpg')
+print(get_time_difference('photo_07464.jpg', 'photo_07465.jpg'))
 --- /code ---
 
 Your output should look something like this, depending on the photos you have chosen.

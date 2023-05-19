@@ -4,7 +4,7 @@ With the coordinates of matching features stored, the distance between the coord
 
 --- task ---
 
-Create a function to calculate the average distance between matching coordinates. Call it `calculate_mean_distance` that takes two arguments, which will be the two coordinates lists.
+Create a function to calculate the average distance between matching coordinates. Call it `calculate_mean_distance`. It takes two arguments, which will be the two coordinates lists.
 
 --- code ---
 ---
@@ -19,11 +19,11 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
 
 --- /task ---
 
-The Python `zip` function will take items from two lists and join them together. So the 0th item from the first list and the 0th item from the second list are combined together. Then the 1st items from each of the lists are combined together. The zipped lists can easily be converted back to a single simple list.
+The Python `zip` function will take items from two lists and join them together. So the 0th item from the first list and the 0th item from the second list are combined together. Then the 1st items from each of the lists are combined together. The zipped list object can easily be converted back to a single simple list.
 
 --- task ---
 
-Start by creating a variable to store the total of all the distances between coordinates and call it `all_distances`. Then you can `zip` the two lists and then convert the zipped object back to a list.
+Start by creating a variable to store the sum of all the distances between coordinates and call it `all_distances`. Next, you can `zip` the two lists, and then convert the zipped object back to a list.
 
 --- code ---
 ---
@@ -44,7 +44,7 @@ To see what has happened here, you can add some `print` calls to see the details
 
 --- task ---
 
-Add three `print` calls to see an item in `coordinates_1`, `coordinates_2` and `merged_coordinates`.
+Add three `print` calls to see an item in `coordinates_1`, `coordinates_2`, and `merged_coordinates`.
 
 --- code ---
 ---
@@ -112,9 +112,9 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
 
 --- /task ---
 
-Look at the following image
+Look at the following image:
 
-![Triangle with points A, B, C and lengths a, b, c](images/triangle.png)
+![Triangle with points upper-case A, B, C and lengths lower-case a, b, c.](images/triangle.png)
 
 The distance between points **A** and **B** is the length of the line **c**. This is called the hypotenuse. Using the `math` package, the hypotenuse (`hypot`) can be calculated.
 
@@ -144,7 +144,7 @@ def calculate_mean_distance(coordinates_1, coordinates_2):
 
 --- task ---
 
-Return the average distance between the features, by dividing `all_distances` by the number of feature matches, which is the length of the `merged_coordinates` list.
+Return the average distance between the features by dividing `all_distances` by the number of feature matches, which is the length of the `merged_coordinates` list.
 
 --- code ---
 ---
@@ -179,11 +179,11 @@ line_numbers: false
 line_number_start: 75
 line_highlights: 81-82
 ---
-time_difference = get_time_difference(image_1, image_2) #get time difference between images
-image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) #create opencfv images objects
-keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) #get keypoints and descriptors
-matches = calculate_matches(descriptors_1, descriptors_2) #match descriptors
-display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) #display matches
+time_difference = get_time_difference(image_1, image_2) # Get time difference between images
+image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) # Create OpenCV image objects
+keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(image_1_cv, image_2_cv, 1000) # Get keypoints and descriptors
+matches = calculate_matches(descriptors_1, descriptors_2) # Match descriptors
+display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) # Display matches
 coordinates_1, coordinates_2 = find_matching_coordinates(keypoints_1, keypoints_2, matches)
 average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
 print(average_feature_distance)
@@ -191,6 +191,6 @@ print(average_feature_distance)
 
 --- /task ---
 
-When you run your code you should get an answer like `516.2791658606644`
+When you run your code, you should get an answer like `516.2791658606644`.
 
 --- save ---
