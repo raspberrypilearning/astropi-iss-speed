@@ -136,7 +136,7 @@ def get_time(image):
             print(data)
 
 
-get_time('photo_00154.jpg')
+get_time('photo_1754.jpg')
 --- /code ---
 
 --- /task ---
@@ -211,7 +211,7 @@ def get_time(image):
     return time
 
 
-print(get_time('photo_00154.jpg'))
+print(get_time('photo_1754.jpg'))
 --- /code ---
 
 When you run this code, you should see output that looks like this:

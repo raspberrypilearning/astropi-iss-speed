@@ -150,8 +150,8 @@ line_numbers: true
 line_number_start: 42
 line_highlights:
 ---
-image_1 = 'photo_07464.jpg'
-image_2 = 'photo_07465.jpg'
+image_1 = 'photo_1754.jpg'
+image_2 = 'photo_1755.jpg'
 
 
 time_difference = get_time_difference(image_1, image_2) # Get time difference between images

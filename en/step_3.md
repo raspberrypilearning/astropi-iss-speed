@@ -112,7 +112,7 @@ def get_time_difference(image_1, image_2):
     print(time_difference)
 
 
-get_time_difference('photo_07464.jpg', 'photo_07465.jpg')
+get_time_difference('photo_1754.jpg', 'photo_1755.jpg')
 
 --- /code ---
 
@@ -169,7 +169,7 @@ def get_time_difference(image_1, image_2):
     return time_difference.seconds
 
 
-print(get_time_difference('photo_07464.jpg', 'photo_07465.jpg'))
+print(get_time_difference('photo_1754.jpg', 'photo_1755.jpg'))
 --- /code ---
 
 Your output should look something like this, depending on the photos you have chosen.
