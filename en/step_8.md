@@ -25,7 +25,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 
 --- /task ---
 
-You can use [this website](https://www.3dflow.net/ground-sampling-distance-calculator/) to calculate the scaling factor between distance in pixels and distance on Earth. The ground sample distance (GSD) is given in centimeters/pixels. You need the distance in kilometers though, and there are 100,000 centimeters in a kilometer.
+You can use [this website](https://www.3dflow.net/ground-sampling-distance-calculator/) to calculate the scaling factor between distance in pixels and distance on Earth. The Ground Sample Distance (GSD) is given in centimeters/pixels. You need the distance in kilometers though, and there are 100,000 centimeters in a kilometer. If you are using photos of a different resolution from the examples here, you will need to recalculate the GSD. 
 
 --- task ---
 
