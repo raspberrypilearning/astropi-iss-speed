@@ -92,6 +92,6 @@ print(speed)
 
 --- /task ---
 
-With the two images used in this project, a value of `7.255443210895204` is returned, which is not far from the 7.66kmps speed that the ISS actually travels at.
+With the two images used in this project, a value of `6.8387` is returned, which is not far from the 7.66kmps speed that the ISS actually travels at.
 
 --- save ---
