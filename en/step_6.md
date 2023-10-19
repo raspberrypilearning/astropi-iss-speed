@@ -50,7 +50,7 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 54
-line_highlights: 57-58
+line_highlights: 57-61
 ---
 def find_matching_coordinates(keypoints_1, keypoints_2, matches):
     coordinates_1 = []
@@ -93,13 +93,13 @@ def find_matching_coordinates(keypoints_1, keypoints_2, matches):
 
 --- task ---
 
-Add a function call to the bottom of your script to store the outputs of the function.
+Add a function call to the bottom of your script to store the outputs of the function. Add a line to print the first pair of coordinates from each list, and the run your program.
 
 --- code ---
 ---
 language: python
 filename: iss_speed.py
-line_numbers: false
+line_numbers: true
 line_number_start: 67
 line_highlights: 72
 ---
@@ -109,8 +109,15 @@ keypoints_1, keypoints_2, descriptors_1, descriptors_2 = calculate_features(imag
 matches = calculate_matches(descriptors_1, descriptors_2) # Match descriptors
 display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) # Display matches
 coordinates_1, coordinates_2 = find_matching_coordinates(keypoints_1, keypoints_2, matches)
+print(coordinates_1[0], coordinates_2[0])
+
 --- /code ---
 
 --- /task ---
+
+Your result should look something like this:
+```
+(884.000010351582, 373.200001220703125) (750.800048828125, 476.4000244140625)
+```
 
 --- save ---

@@ -123,7 +123,7 @@ get_time_difference('photo_1754.jpg', 'photo_1755.jpg')
 Run your code, and if you have used the two images shown above, you should see output like this:
 
 ```
->>> 0:00:09
+>>> 0:00:06
 ```
 
 --- /task ---
@@ -175,7 +175,7 @@ print(get_time_difference('photo_1754.jpg', 'photo_1755.jpg'))
 Your output should look something like this, depending on the photos you have chosen.
 
 ```
->>> 0:00:09
+>>> 6
 ```
 --- /task ---
 

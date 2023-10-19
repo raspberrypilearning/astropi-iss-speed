@@ -191,6 +191,6 @@ print(average_feature_distance)
 
 --- /task ---
 
-When you run your code, you should get an answer like `516.2791658606644`.
+When you run your code, you should get an answer like `105.73230267075526`.
 
 --- save ---

@@ -25,7 +25,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 
 --- /task ---
 
-You can use [this website](https://www.3dflow.net/ground-sampling-distance-calculator/) to calculate the scaling factor between distance in pixels and distance on Earth. The Ground Sample Distance (GSD) is given in centimeters/pixels. You need the distance in kilometers though, and there are 100,000 centimeters in a kilometer. If you are using photos of a different resolution from the examples here, you will need to recalculate the GSD. 
+You can use [this website](https://www.3dflow.net/ground-sampling-distance-calculator/) to calculate the scaling factor between distance in pixels and distance on Earth. The Ground Sample Distance (GSD) is given in centimeters/pixels. You need the distance in kilometers though, and there are 100,000 centimeters in a kilometer. If you are using photos of a different resolution from the examples here, or photos taken with a different camera,  you will need to recalculate the GSD. 
 
 --- task ---
 
@@ -65,7 +65,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 
 --- /task ---
 
-[The Ground Sampling Distance](https://www.3dflow.net/ground-sampling-distance-calculator){:target='_blank'} site gives a `GDS` of 12648 for the High Quality Camera on the ISS.
+[The Ground Sampling Distance](https://www.3dflow.net/ground-sampling-distance-calculator){:target='_blank'} site gives a `GDS` of 38808 for the High Quality Camera on the ISS taking photos of the resolution of these examples (1096x972)..
 
 --- task ---
 
@@ -86,7 +86,7 @@ matches = calculate_matches(descriptors_1, descriptors_2) # Match descriptors
 display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) # Display matches
 coordinates_1, coordinates_2 = find_matching_coordinates(keypoints_1, keypoints_2, matches)
 average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
-speed = calculate_speed_in_kmps(average_feature_distance, 12648, time_difference)
+speed = calculate_speed_in_kmps(average_feature_distance, 38808, time_difference)
 print(speed)
 --- /code ---
 

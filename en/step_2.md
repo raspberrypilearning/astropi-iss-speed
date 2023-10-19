@@ -197,7 +197,7 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 8-10, 12
+line_highlights: 8-10, 13
 ---
 from exif import Image
 from datetime import datetime
@@ -217,7 +217,7 @@ print(get_time('photo_1754.jpg'))
 When you run this code, you should see output that looks like this:
 
 ```
-2022-01-14 15:25:07
+2023-05-05 03:30:03
 ```
 --- /task ---
 

@@ -96,7 +96,7 @@ language: python
 filename: calc_speed.cv
 line_numbers: true
 line_number_start: 46
-line_highlights: 48-49
+line_highlights: 50-51
 ---
 def display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches):
     match_img = cv2.drawMatches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches[:100], None)
