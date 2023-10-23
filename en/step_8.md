@@ -65,7 +65,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 
 --- /task ---
 
-[The Ground Sampling Distance](https://www.3dflow.net/ground-sampling-distance-calculator){:target='_blank'} site gives a `GDS` of 38808 for the High Quality Camera on the ISS taking photos of the resolution of these examples (1096x972)..
+[The Ground Sampling Distance](https://www.3dflow.net/ground-sampling-distance-calculator){:target='_blank'} site gives a `GDS` of 12648 for the High Quality Camera on the ISS taking photos of the resolution of these examples (4056 x 3040). If you use different photos, you will need to recalculate the GSD if they have a different resolution or were taken with a different camera. 
 
 --- task ---
 
@@ -86,12 +86,12 @@ matches = calculate_matches(descriptors_1, descriptors_2) # Match descriptors
 display_matches(image_1_cv, keypoints_1, image_2_cv, keypoints_2, matches) # Display matches
 coordinates_1, coordinates_2 = find_matching_coordinates(keypoints_1, keypoints_2, matches)
 average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
-speed = calculate_speed_in_kmps(average_feature_distance, 38808, time_difference)
+speed = calculate_speed_in_kmps(average_feature_distance, 12648, time_difference)
 print(speed)
 --- /code ---
 
 --- /task ---
 
-With the two images used in this project, a value of `6.8387` is returned, which is not far from the 7.66kmps speed that the ISS actually travels at.
+With the two images used in this project, a value of `7.084` is returned, which is not far from the 7.66kmps speed that the ISS actually travels at.
 
 --- save ---

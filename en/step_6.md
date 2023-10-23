@@ -101,7 +101,7 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 67
-line_highlights: 72
+line_highlights: 72-73
 ---
 time_difference = get_time_difference(image_1, image_2) # Get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) # Create OpenCV image objects
@@ -117,7 +117,7 @@ print(coordinates_1[0], coordinates_2[0])
 
 Your result should look something like this:
 ```
-(884.000010351582, 373.200001220703125) (750.800048828125, 476.4000244140625)
+(666.8699340820312, 629.5451049804688) (661.8932495117188, 1062.512939453125)
 ```
 
 --- save ---

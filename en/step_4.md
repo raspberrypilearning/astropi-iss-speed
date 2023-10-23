@@ -150,8 +150,8 @@ line_numbers: true
 line_number_start: 42
 line_highlights:
 ---
-image_1 = 'photo_1754.jpg'
-image_2 = 'photo_1755.jpg'
+image_1 = 'photo_0683.jpg'
+image_2 = 'photo_0684.jpg'
 
 
 time_difference = get_time_difference(image_1, image_2) # Get time difference between images
@@ -167,7 +167,7 @@ print(matches)
 The result should look something like this:
 
 ```
-[<DMatch 0F73B548>, <DMatch 0F73B4A0>, <DMatch 0F73C560>, <DMatch 0F719E60>...
+[< cv2.DMatch 0x11b34cb30>, < cv2.DMatch 0x11b2db8b0>, < cv2.DMatch 0x11b2dbef0>...
 ```
 
 This is a list of matches along with the keypoint. It's not very helpful though, so in the next step you can plot the matches on the images and view them.
