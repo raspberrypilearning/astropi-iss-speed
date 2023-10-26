@@ -31,7 +31,7 @@ Create a function, below your other functions, that takes the two OpenCV image o
 --- code ---
 ---
 language: python
-filename: iss_speed.cv
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 46
 line_highlights: 46
@@ -54,7 +54,7 @@ Next, draw lines between the keypoints where the descriptors match.
 --- code ---
 ---
 language: python
-filename: iss_speed.cv
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 46
 line_highlights: 47
@@ -72,7 +72,7 @@ The images can now be resized and shown, side by side on your screen, with the l
 --- code ---
 ---
 language: python
-filename: iss_speed.cv
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 46
 line_highlights: 48-49
@@ -93,7 +93,7 @@ To finish off the function, the script needs to wait until a key is pressed, and
 --- code ---
 ---
 language: python
-filename: iss_speed.cv
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 46
 line_highlights: 50-51
