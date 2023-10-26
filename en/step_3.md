@@ -13,7 +13,7 @@ Remove the call to `print` the results of your `get_time` function.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 
 line_highlights: 13
@@ -43,7 +43,7 @@ Create a new function called `get_time_difference`. It will take two arguments, 
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 13
@@ -60,7 +60,7 @@ Use your `get_time` function to get the times from the Exif data from each of th
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 14-15
@@ -79,7 +79,7 @@ Subtract the two times from each other, and test it by printing.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: issc_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 16-17
@@ -100,7 +100,7 @@ You can run your function by calling it with two different image names.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 16-17
@@ -135,7 +135,7 @@ The function needs to return the time in seconds, as an integer. The `datetime` 
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 17
@@ -157,7 +157,7 @@ To test your code, you can `print` the output of the new function.
 --- code ---
 ---
 language: python
-filename: calc_speed.py
+filename: iss_speed.py
 line_numbers: true
 line_number_start: 13
 line_highlights: 17
