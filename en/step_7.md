@@ -81,9 +81,9 @@ average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
 
 When you run the code, you should see output that looks like this:
 ```
-(3002.400146484375, 1620.0001220703125)
-(3428.64013671875, 1637.280029296875)
-((3002.400146484375, 1620.0001220703125), (3428.64013671875, 1637.280029296875))
+(666.8699340820312, 629.5451049804688)
+(661.8932495117188, 1062.512939453125)
+((666.8699340820312, 629.5451049804688), (661.8932495117188, 1062.512939453125))
 ```
 
 --- /task ---
@@ -177,7 +177,7 @@ language: python
 filename: iss_speed.py
 line_numbers: false
 line_number_start: 75
-line_highlights: 81-82
+line_highlights: 81-83
 ---
 time_difference = get_time_difference(image_1, image_2) # Get time difference between images
 image_1_cv, image_2_cv = convert_to_cv(image_1, image_2) # Create OpenCV image objects
@@ -191,6 +191,6 @@ print(average_feature_distance)
 
 --- /task ---
 
-When you run your code, you should get an answer like `516.2791658606644`.
+When you run your code, you should get an answer like `504.08973470622516'.
 
 --- save ---

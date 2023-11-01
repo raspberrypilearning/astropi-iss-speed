@@ -25,7 +25,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 
 --- /task ---
 
-You can use [this website](https://www.3dflow.net/ground-sampling-distance-calculator/) to calculate the scaling factor between distance in pixels and distance on Earth. The ground sample distance (GSD) is given in centimeters/pixels. You need the distance in kilometers though, and there are 100,000 centimeters in a kilometer.
+You can use [this website](https://www.3dflow.net/ground-sampling-distance-calculator/) to calculate the scaling factor between distance in pixels and distance on Earth. The Ground Sample Distance (GSD) is given in centimeters/pixels. You need the distance in kilometers though, and there are 100,000 centimeters in a kilometer. If you are using photos of a different resolution from the examples here, or photos taken with a different camera,  you will need to recalculate the GSD. 
 
 --- task ---
 
@@ -65,7 +65,7 @@ def calculate_speed_in_kmps(feature_distance, GSD, time_difference):
 
 --- /task ---
 
-[The Ground Sampling Distance](https://www.3dflow.net/ground-sampling-distance-calculator){:target='_blank'} site gives a `GDS` of 12648 for the High Quality Camera on the ISS.
+[The Ground Sampling Distance](https://www.3dflow.net/ground-sampling-distance-calculator){:target='_blank'} site gives a `GDS` of 12648 for the High Quality Camera on the ISS taking photos of the resolution of these examples (4056 x 3040). If you use different photos, you will need to recalculate the GSD if they have a different resolution or were taken with a different camera. 
 
 --- task ---
 
@@ -92,6 +92,6 @@ print(speed)
 
 --- /task ---
 
-With the two images used in this project, a value of `7.255443210895204` is returned, which is not far from the 7.66kmps speed that the ISS actually travels at.
+With the two images used in this project, a value of `7.084` is returned, which is not far from the 7.66kmps speed that the ISS actually travels at.
 
 --- save ---

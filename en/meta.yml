@@ -1,11 +1,11 @@
 ---
-title: Calculate the speed of the ISS
+title: Calculate the speed of the ISS using photos
 hero_image: images/banner.png
 description: Calculate the speed of the ISS using image data
 version: 4
 listed: true
 copyedit: true
-last_tested: '2022-04-26'
+last_tested: '2023-10-19'
 steps:
 - title: Introduction
 - title: Use EXIF data to find a time difference
@@ -15,5 +15,5 @@ steps:
 - title: Find matching coordinates
 - title: Calculate feature distance
 - title: Calculate average speed
-- title: Upgrade your project
+- title: Improving your program
 - title: What next?

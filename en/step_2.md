@@ -136,7 +136,7 @@ def get_time(image):
             print(data)
 
 
-get_time('photo_00154.jpg')
+get_time('photo_0683.jpg')
 --- /code ---
 
 --- /task ---
@@ -197,7 +197,7 @@ language: python
 filename: iss_speed.py
 line_numbers: true
 line_number_start: 
-line_highlights: 8-10, 12
+line_highlights: 8-10, 13
 ---
 from exif import Image
 from datetime import datetime
@@ -211,13 +211,13 @@ def get_time(image):
     return time
 
 
-print(get_time('photo_00154.jpg'))
+print(get_time('photo_0683.jpg'))
 --- /code ---
 
 When you run this code, you should see output that looks like this:
 
 ```
-2022-01-14 15:25:07
+2023-05-08 15:31:57
 ```
 --- /task ---
 
