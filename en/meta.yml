@@ -9,6 +9,8 @@ last_tested: '2023-10-19'
 steps:
 - title: Introduction
 - title: Use EXIF data to find a time difference
+  completion:
+  - engaged
 - title: Finding the time difference for two photos
 - title: Find matching features
 - title: Display matching features
@@ -16,4 +18,8 @@ steps:
 - title: Calculate feature distance
 - title: Calculate average speed
 - title: Improving your program
+  completion:
+  - internal
 - title: What next?
+  completion:
+  - external
