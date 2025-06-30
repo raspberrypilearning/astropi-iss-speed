@@ -20,6 +20,5 @@ steps:
 - title: Improving your program
   completion:
   - internal
-- title: What next?
   completion:
   - external
