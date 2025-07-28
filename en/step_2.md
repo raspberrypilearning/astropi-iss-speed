@@ -146,39 +146,15 @@ get_time('photo_0683.jpg')
 Run your code, and you should see some output that looks like this:
 
 ```
-image_width
-image_height
 make
 model
-x_resolution
-y_resolution
-resolution_unit
+software
 datetime
-y_and_c_positioning
 _exif_ifd_pointer
 _gps_ifd_pointer
-compression
-jpeg_interchange_format
-jpeg_interchange_format_length
 exposure_time
-exposure_program
 photographic_sensitivity
-exif_version
 datetime_original
-datetime_digitized
-components_configuration
-shutter_speed_value
-brightness_value
-metering_mode
-flash
-maker_note
-flashpix_version
-color_space
-pixel_x_dimension
-pixel_y_dimension
-_interoperability_ifd_Pointer
-exposure_mode
-white_balance
 gps_latitude_ref
 gps_latitude
 gps_longitude_ref
@@ -208,7 +184,7 @@ def get_time(image):
         img = Image(image_file)
         time_str = img.get("datetime_original")
         time = datetime.strptime(time_str, '%Y:%m:%d %H:%M:%S')
-    return time
+        return time
 
 
 print(get_time('photo_0683.jpg'))
