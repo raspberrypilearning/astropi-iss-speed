@@ -81,9 +81,10 @@ average_feature_distance = calculate_mean_distance(coordinates_1, coordinates_2)
 
 When you run the code, you should see output that looks like this:
 ```
-(666.8699340820312, 629.5451049804688)
-(661.8932495117188, 1062.512939453125)
-((666.8699340820312, 629.5451049804688), (661.8932495117188, 1062.512939453125))
+(2006.4000244140625, 2119.2001953125) (2722.800048828125, 2156.400146484375)
+(2006.4000244140625, 2119.2001953125)
+(2722.800048828125, 2156.400146484375)
+((2006.4000244140625, 2119.2001953125), (2722.800048828125, 2156.400146484375))
 ```
 
 --- /task ---
@@ -191,6 +192,6 @@ print(average_feature_distance)
 
 --- /task ---
 
-When you run your code, you should get an answer like `504.08973470622516'.
+When you run your code, you should get an answer like `857.1072244913112'.
 
 --- save ---

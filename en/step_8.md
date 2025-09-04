@@ -92,6 +92,6 @@ print(speed)
 
 --- /task ---
 
-With the two images used in this project, a value of `7.0843` is returned, which is not far from the 7.66kmps normally quoted for the ISS.
+With the two images used in this project, a value of `7.743351553832931` is returned, which is not far from the 7.66kmps normally quoted for the ISS.
 
 --- save ---

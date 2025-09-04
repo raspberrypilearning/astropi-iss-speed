@@ -57,7 +57,7 @@ import math
 
 --- task ---
 
-Delete your call to `print(get_time_difference('photo_07464.jpg', 'photo_07465.jpg'))` on line 22.
+Delete your call to `print(get_time_difference('atlas_photo_012.jpg', 'atlas_photo_01.jpg'))` on line 22.
 
 --- /task ---
 
@@ -150,8 +150,8 @@ line_numbers: true
 line_number_start: 42
 line_highlights:
 ---
-image_1 = 'photo_0683.jpg'
-image_2 = 'photo_0684.jpg'
+image_1 = 'atlas_photo_012.jpg'
+image_2 = 'atlas_photo_013.jpg'
 
 
 time_difference = get_time_difference(image_1, image_2) # Get time difference between images
