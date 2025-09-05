@@ -18,6 +18,7 @@ steps:
 - title: Calculate feature distance
 - title: Calculate average speed
 - title: Improving your program
+- title: What next?
   completion:
   - internal
   completion:

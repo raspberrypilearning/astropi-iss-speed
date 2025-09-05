@@ -4,7 +4,7 @@ All contributions are assumed to be licensed under the same licence as the sourc
 
 ## Issues
 
-If you find a mistake, bug, or other problem, please [open an issue](https://github.com/raspberrypilearning/repo-name/issues) in this repository.
+If you find a mistake, bug, or other problem, please [open an issue](https://github.com/raspberrypilearning/astropi-iss-speed/issues) in this repository.
 
 ## Pull requests
 

@@ -26,7 +26,7 @@ To complete this project, you will need:
 
 **Hardware**
 
-+ A computer that can run Python or a web-browser and access to [repl.it](https://replit.com)
++ A computer that can run Python or a web-browser and access to a code editor of your choice.
  
 
 **Software**
