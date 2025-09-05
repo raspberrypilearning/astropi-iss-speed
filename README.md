@@ -1,4 +1,4 @@
-# astropi-iss-speed
+# Calculate the speed of the ISS using photos (`astropi-iss-speed`)
 
 ![astropi-iss-speed](banner.png)
 
@@ -11,4 +11,4 @@ For project materials and solutions, see [en/resources](https://github.com/raspb
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Licence
- See [LICENCE.md](LICENCE.md)
+See [LICENCE.md](LICENCE.md)
