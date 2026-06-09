@@ -112,7 +112,7 @@ def get_time_difference(image_1, image_2):
     print(time_difference)
 
 
-get_time_difference('c', 'atlas_photo_013.jpg')
+get_time_difference('atlas_photo_012.jpg', 'atlas_photo_013.jpg')
 
 --- /code ---
 
