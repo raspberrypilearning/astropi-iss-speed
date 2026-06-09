@@ -14,13 +14,11 @@ You will:
 + Use OpenCV to calculate distances between similar features in two images
 + Calculate the speed of the ISS
 
---- task ---
-  
+ 
 The image below shows two photos taken from the ISS, with lines that connect similar features. By measuring the pixel distance between the features that have moved, you can calculate the speed that the camera was moving, and so work out how fast the ISS is travelling.
 
 ![Two images, side by side, taken from the ISS with lines mapping the similar features between the images.](images/features_view.png)
 
---- /task ---
 
 To complete this project, you will need:
 
